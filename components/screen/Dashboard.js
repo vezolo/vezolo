@@ -291,14 +291,14 @@ const Events = () => {
             key={item?._id || i}
             className={`flex-rowAC ${styles.imageTextGap}`}
           >
-            {/* <Image
+            <Image
               src="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE4wwum?ver=6aed"
               loader={imageLoader}
               alt=""
               width={93}
               height={93}
               className={styles.eventImage}
-            /> */}
+            />
 
             <div className={styles.eventContent}>
               <p className={styles.widgetTitle}> {item?.title}</p>

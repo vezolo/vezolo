@@ -9,6 +9,7 @@
       "@/constants/*": ["constants/*"],
       "@/fonts/*": ["fonts/*"],
       "@/contexts/*": ["contexts/*"],
+      "@/hooks/*": ["hooks/*"],
     }
   }
 }

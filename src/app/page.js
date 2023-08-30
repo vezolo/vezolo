@@ -11,14 +11,7 @@ export default function Home() {
 
   return (
     <>
-      {loginState?.userToken !== null ? (
-        <Login />
-      ) : (
-        <>
-          <Menu />
-          <Dashboard />
-        </>
-      )}
+      <Dashboard />
     </>
   );
 }

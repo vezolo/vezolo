@@ -1,7 +1,8 @@
-"use client"
+"use client";
 
 import AuthContextProvider from "@/contexts/AuthContext";
 import React, { useEffect, useMemo, useReducer } from "react";
+import Login from "./Login";
 
 const AuthLayout = ({ children }) => {
   const initialLoginState = {
@@ -79,10 +80,10 @@ const AuthLayout = ({ children }) => {
       dispatch({ type: "RETRIEVE_TOKEN", token: userToken });
     }, 500);
   }, []);
-  
+
   return (
     <AuthContextProvider authContext={authContext} loginState={loginState}>
-      {children}
+      {loginState?.userToken !== null ? <Login /> : children}
     </AuthContextProvider>
   );
 };

@@ -4,6 +4,7 @@ const SFCompactRounded = localFont({
   src: "../../fonts/sf-compact-rounded.ttf",
 });
 import "../../styles/global.css";
+import Menu from "@/components/menu";
 
 export const metadata = {
   title: "Vezolo",
@@ -14,7 +15,10 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={SFCompactRounded.className}>
-        <AuthLayout>{children}</AuthLayout>
+        <AuthLayout>
+          <Menu />
+          {children}
+        </AuthLayout>
       </body>
     </html>
   );
